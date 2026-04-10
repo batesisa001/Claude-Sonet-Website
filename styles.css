@@ -643,12 +643,27 @@ a.contact-item__value:hover {
   margin-bottom: 32px;
 }
 
+.footer-logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
 .footer-logo-img {
   height: 32px;
   width: auto;
   display: block;
-  margin-bottom: 10px;
   border-radius: 2px;
+}
+
+.footer-logo-name {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .footer-tagline {
