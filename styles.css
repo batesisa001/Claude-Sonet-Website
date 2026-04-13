@@ -3,6 +3,9 @@
    Clean, professional private equity real estate website
    ============================================================ */
 
+/* ── Google Fonts (loaded here as a reliable fallback for all hosting environments) ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
 /* ── Reset & Base ── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -440,6 +443,69 @@ ul {
   font-size: 0.95rem;
   color: var(--color-slate);
   line-height: 1.8;
+}
+
+.strategy-card__modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.mode-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+  background-color: var(--color-light-gray);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.strategy-card__sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+
+.company-list {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.company-list li {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-navy);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-list li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.company-mode-label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  min-width: 46px;
 }
 
 /* ============================================================
